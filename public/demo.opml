@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>Feeds from my blog roll</title>
+  </head>
+  <body>
+    <outline
+      text="Design Systems" title="Design Systems" type="rss"
+      xmlUrl="https://news.design.systems/issues.rss" htmlUrl="https://news.design.systems/issues" />
+    <outline
+      text="Zeldman on Web and Interaction Design"
+      title="Zeldman on Web and Interaction Design" type="rss" xmlUrl="https://zeldman.com/feed/"
+      htmlUrl="https://zeldman.com/" />
+    <outline text="hiddedevries.nl Blog"
+      title="hiddedevries.nl Blog" type="rss"
+      xmlUrl="https://hidde.blog/feed" htmlUrl="https://hidde.blog" />
+    <outline
+      text="Lea Verou’s blog" title="Lea Verou’s blog" type="rss"
+      xmlUrl="https://lea.verou.me/feed.xml" htmlUrl="https://lea.verou.me/" />
+    <outline
+      text="Bruce Lawson’s  personal site" title="Bruce Lawson’s  personal site" type="rss"
+      xmlUrl="https://brucelawson.co.uk/feed/" htmlUrl="https://brucelawson.co.uk/" />
+    <outline
+      text="Reasons To Be Cheerful" title="Reasons To Be Cheerful" type="rss"
+      xmlUrl="https://reasonstobecheerful.world/feed/" htmlUrl="https://reasonstobecheerful.world/" />
+    <outline
+      text="Hicks Journal: Latest articles" title="Hicks Journal: Latest articles" type="rss"
+      xmlUrl="https://hicks.design/feeds/journal/" htmlUrl="https://hicks.design/journal" />
+    <outline text="Own Your Web" title="Own Your Web"
+      type="rss"
+      xmlUrl="https://buttondown.email/ownyourweb/rss" htmlUrl="https://buttondown.email/ownyourweb" />
+    <outline
+      text="remy sharp's b:log" title="remy sharp's b:log" type="rss"
+      xmlUrl="https://remysharp.com/feed.xml" htmlUrl="http://remysharp.com/" />
+    <outline
+      text="Oh Hello Ana" title="Oh Hello Ana" type="rss"
+      xmlUrl="https://ohhelloana.blog/feed.xml" htmlUrl="https://ohhelloana.blog/" />
+    <outline
+      text="Brad Frost" title="Brad Frost" type="rss"
+      xmlUrl="https://feeds.feedburner.com/brad-frosts-blog" htmlUrl="http://bradfrost.com/" />
+    <outline
+      text="Zach Leatherman" title="Zach Leatherman" type="rss"
+      xmlUrl="https://www.zachleat.com/web/feed/" htmlUrl="http://www.zachleat.com/web/" />
+    <outline
+      text="Veerle's Inspiration Stream 4.0" title="Veerle's Inspiration Stream 4.0"
+      type="rss" xmlUrl="https://veerle.duoh.com/inspiration-feed.rss"
+      htmlUrl="https://veerle.duoh.com/" />
+    <outline
+      text="Go Make Things" title="Go Make Things" type="rss"
+      xmlUrl="https://gomakethings.com/feed/index.xml" htmlUrl="https://gomakethings.com/" />
+    <outline
+      text="Tink - Léonie Watson - On technology, food &amp; life in the digital age"
+      title="Tink - Léonie Watson - On technology, food &amp; life in the digital age" type="rss"
+      xmlUrl="https://tink.uk/feed.xml" htmlUrl="https://tink.uk/" />
+    <outline
+      text="Open Web Advocacy posts" title="Open Web Advocacy posts" type="rss"
+      xmlUrl="https://open-web-advocacy.org/feed.xml" htmlUrl="https://open-web-advocacy.org/" />
+    <outline
+      text="Web Accessibility Initiative (WAI)" title="Web Accessibility Initiative (WAI)"
+      type="rss" xmlUrl="https://www.w3.org/WAI/feed.xml" htmlUrl="https://www.w3.org/WAI/" />
+    <outline
+      text="Thoughts From Eric" title="Thoughts From Eric" type="rss"
+      xmlUrl="https://meyerweb.com/eric/thoughts/rss2/full"
+      htmlUrl="https://meyerweb.com/eric/thoughts" />
+    <outline text="Webbed Briefs"
+      title="Webbed Briefs" type="rss"
+      xmlUrl="https://briefs.video/feed.xml" htmlUrl="https://briefs.video/" />
+    <outline
+      text="Seb Lee-Delisle" title="Seb Lee-Delisle" type="rss"
+      xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCD_8q1KAC3vzQumIsN7Zsig"
+      htmlUrl="https://www.youtube.com/channel/UCD_8q1KAC3vzQumIsN7Zsig" />
+    <outline
+      text="Begin — Blog" title="Begin — Blog" type="rss" xmlUrl="https://begin.com/blog/rss"
+      htmlUrl="https://begin.com" />
+    <outline
+      text="Adam Silver: designer and interface developer from London, UK"
+      title="Adam Silver: designer and interface developer from London, UK" type="rss"
+      xmlUrl="https://adamsilver.io/atom.xml" htmlUrl="https://adamsilver.io/" />
+    <outline
+      text="Tantek Çelik" title="Tantek Çelik" type="rss"
+      xmlUrl="http://tantek.com/updates.atom?ot=article" htmlUrl="http://tantek.com/" />
+    <outline
+      text="HeydonWorks" title="HeydonWorks" type="rss"
+      xmlUrl="https://heydonworks.com/feed.xml" htmlUrl="https://heydonworks.com/" />
+    <outline
+      text="cassie.codes" title="cassie.codes" type="rss"
+      xmlUrl="https://cassie.codes/feed.xml" htmlUrl="https://cassie.codes/" />
+    <outline
+      text="Adactio: Articles" title="Adactio: Articles" type="rss"
+      xmlUrl="https://adactio.com/articles/rss" htmlUrl="https://adactio.com/articles/" />
+    <outline
+      text="Calum Ryan" title="Calum Ryan" type="rss"
+      xmlUrl="https://calumryan.com/feeds/atom" htmlUrl="https://calumryan.com/" />
+    <outline
+      text="@jonty.bsky.social - Jonty Wareing" title="@jonty.bsky.social - Jonty Wareing"
+      type="rss" xmlUrl="https://bsky.app/profile/did:plc:j5cs46d5djgw2cx6hteivcyq/rss"
+      htmlUrl="https://bsky.app/profile/jonty.bsky.social" />
+
+  </body>
+</opml>

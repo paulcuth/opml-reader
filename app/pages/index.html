@@ -1,0 +1,31 @@
+<style scope="global">
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #eee;
+    font-family: Georgia;
+  }
+  a {
+    color: #8888ff;
+  }
+  body opml-reader {
+    --opml-highlight-color: #444;
+    --opml-avatar-background-color: #555;
+    --opml-background-color: #333;
+    --opml-focus-color: cyan;
+    --opml-link-color: #8888ff;
+  }
+  main {
+    height: 100vh;
+  }
+</style>
+
+<main>
+  <opml-reader proxy-url="/proxy?url=${url}">
+    <a type="text/x-opml" href="./_public/demo.opml">Open OPML file</a>
+  </opml-reader>
+</main>
+
+<script type="module" src="/_public/browser/opml-reader.mjs"></script>

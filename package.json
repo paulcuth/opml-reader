@@ -1,0 +1,39 @@
+{
+  "name": "opml-reader",
+  "version": "0.1.0",
+  "description": "A minimally-styled RSS reader Web Component.",
+  "type": "module",
+  "browser": "opml-reader.js",
+  "scripts": {
+    "start": "npx enhance dev",
+    "lint": "eslint ./app/**/*.mjs --fix",
+    "enhance": "enhance",
+    "build": "rollup app/browser/opml-reader.mjs --format es --file opml-reader.js",
+    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest"
+  },
+  "files": [
+    "opml-reader.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulcuth/opml-reader.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Paul Cuthbertson",
+    "email": "github@paulcuth.me.uk",
+    "url": "https://paulcuth.me.uk/"
+  },
+  "homepage": "https://projects.paulcuth.me.uk/opml-reader",
+  "devDependencies": {
+    "@enhance/arc-plugin-enhance": "^9.4.11",
+    "@enhance/cli": "latest",
+    "@enhance/types": "^0.6.1",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "jsdom": "^24.0.0",
+    "jsdom-global": "^3.0.2",
+    "node-fetch": "^3.3.2",
+    "rollup": "^4.14.0"
+  }
+}
