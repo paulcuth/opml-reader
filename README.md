@@ -23,7 +23,7 @@ Wrap the component around fallback content that will be displayed where JavaScri
     Download <a type="text/x-opml" href="">an OPML of my fav blogs</a>.
   </p>
 </opml-reader>
-<script type="module" src="/path/to/opml-reader.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/opml-reader/opml-reader.js"></script>
 ```
 
 ### You'll likely need to proxy the feeds
