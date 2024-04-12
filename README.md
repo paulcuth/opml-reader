@@ -4,7 +4,7 @@ Turn a link to an OPML file into an RSS reader that showcases the content of the
 
 ```xml
 <opml-reader>
-  <a type="text/x-opml" href="">OPML file of my blog roll</a>
+  <a type="text/x-opml" href="blog-roll.opml">OPML file of my blog roll</a>
 </opml-reader>
 ```
 
@@ -15,12 +15,12 @@ Becomes:
 
 ## Usage
 
-Wrap the component around fallback content that will be displayed where JavaScript is not available. Make sure the fallback content contains a link to an OPML file with `rel="text/x-opml"`.
+Wrap the component around fallback content that will be displayed where JavaScript is not available. Make sure the fallback content contains a link to an OPML file with `type="text/x-opml"`.
 
 ```xml
 <opml-reader>
   <p>
-    Download <a type="text/x-opml" href="">an OPML of my fav blogs</a>.
+    Download <a type="text/x-opml" href="blog-roll.opml">an OPML of my fav blogs</a>.
   </p>
 </opml-reader>
 <script type="module" src="https://cdn.jsdelivr.net/npm/opml-reader/opml-reader.js"></script>
