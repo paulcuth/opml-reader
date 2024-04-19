@@ -56,6 +56,30 @@ export class OPMLLayout extends StyleMixin(
       top: -0.1em;
     }
 
+    opml-layout > progress {
+      appearance: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      transition: height .2s linear;
+      background-color: transparent;
+    }
+    opml-layout > progress::-webkit-progress-bar {
+      background-color: transparent;
+    }
+    opml-layout > progress::-moz-progress-bar {
+      background-color: var(--opml-progress-color);
+    }
+    opml-layout > progress::-webkit-progress-value {
+      background-color: var(--opml-progress-color);
+    }
+    opml-layout > progress[value="100"] {
+      height: 0;
+    }
+
     @media (max-width: 1024px) {
       opml-layout[data-view-by=feed] opml-article-detail nav.back button {
         display: block;
@@ -148,6 +172,7 @@ export class OPMLLayout extends StyleMixin(
     "viewBy",
     "selectedFeedUrl",
     "selectedArticleId",
+    "loadedPercent",
   ];
 
   // ----------------------------
@@ -190,6 +215,10 @@ export class OPMLLayout extends StyleMixin(
     this.render();
   }
 
+  onLoadedPercentChange(pc) {
+    this.querySelector("progress").value = pc ?? 0;
+  }
+
   // ----------------------------
   // RENDER
 
@@ -204,6 +233,7 @@ export class OPMLLayout extends StyleMixin(
     switch (this._viewBy) {
       case "feed":
         this.innerHTML = `
+          <progress min="0" max="100" value="0"></progress>
           <${feedListElement} class="feed-list"></${feedListElement}>
           <${feedDetailElement} class="feed-detail"></${feedDetailElement}>
           <${articleDetailElement} class="article-detail"></${articleDetailElement}>
@@ -212,6 +242,7 @@ export class OPMLLayout extends StyleMixin(
 
       case "article":
         this.innerHTML = `
+          <progress min="0" max="100" value="0"></progress>
           <${chronologicalListElement} class="chronological-list"></${chronologicalListElement}>
           <${articleDetailElement} class="article-detail"></${articleDetailElement}>
       `;

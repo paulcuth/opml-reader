@@ -65,6 +65,9 @@ The background colour used to highlight selected items.
 **_`--opml-link-color`_**
 The colour used to denote links (and buttons styled as links).
 
+**_`--opml-progress-color`_**
+The colour used to in the loading indicator bar.
+
 
 ## Contributing
 

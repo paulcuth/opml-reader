@@ -19,6 +19,7 @@ export class OPMLReader extends StyleMixin(HTMLElement) {
       --opml-avatar-background-color: gainsboro;
       --opml-focus-color: black;
       --opml-link-color: blue;
+      --opml-progress-color: var(--opml-focus-color);
       
       width: 100%;
       height: 100%;
@@ -225,7 +226,14 @@ export class OPMLReader extends StyleMixin(HTMLElement) {
   }
 
   async _fetchFeeds() {
-    this._feeds.forEach((feed) => this._fetchFeed(feed));
+    const total = this._feeds.length;
+    let loaded = 0;
+
+    this._feeds.forEach(async (feed) => {
+      await this._fetchFeed(feed);
+      loaded = loaded + 1;
+      this._stateProvider.update("loadedPercent", (loaded * 100) / total);
+    });
   }
 
   async _fetchFeed(feed) {
