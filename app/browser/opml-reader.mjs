@@ -175,12 +175,14 @@ export class OPMLReader extends StyleMixin(HTMLElement) {
   }
 
   _initUI() {
+    const view = this.getAttribute("view-by") ?? "feed";
+
     this.innerHTML = "";
     this.insertAdjacentHTML("beforeend", "<opml-state-provider />");
 
     this._stateProvider = this.querySelector("opml-state-provider");
     this._stateProvider.update("settings", this._settings);
-    this._stateProvider.update("viewBy", "feed");
+    this._stateProvider.update("viewBy", view);
     this._stateProvider.insertAdjacentHTML(
       "beforeend",
       `<opml-local-storage /><${this._settings.layoutElement} />`
