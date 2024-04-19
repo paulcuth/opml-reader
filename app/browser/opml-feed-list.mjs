@@ -1,7 +1,6 @@
 import StyleMixin from "./StyleMixin";
 import BindEventHandlersMixin from "./BindEventHandlersMixin";
 import StateMixin from "./StateMixin";
-import formatDate from "./formatDate.mjs";
 
 export class OPMLFeedList extends StyleMixin(
   StateMixin(BindEventHandlersMixin(HTMLElement))
@@ -123,16 +122,11 @@ export class OPMLFeedList extends StyleMixin(
       this.onViewByArticleClick
     );
 
-    const { title, dateCreated, url } = this._sourceMetadata ?? {};
-    const timestamp =
-      dateCreated == null
-        ? ""
-        : `<time datetime="${dateCreated}">${formatDate(dateCreated)}</time>`;
+    const { title, url } = this._sourceMetadata ?? {};
 
     this._header.innerHTML = `
       <h2>${title ?? ""}</h2>
       <p>
-        ${timestamp}
         <a href="${url}">Open OPML file</a> <button class="link">View by article</button>
       </p>
     `;
