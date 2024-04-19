@@ -1,6 +1,6 @@
 {
   "name": "opml-reader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A minimally-styled RSS reader Web Component.",
   "type": "module",
   "browser": "opml-reader.js",
