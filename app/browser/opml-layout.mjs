@@ -66,6 +66,7 @@ export class OPMLLayout extends StyleMixin(
       height: 2px;
       transition: height .2s linear;
       background-color: transparent;
+      z-index: 2;
     }
     opml-layout > progress::-webkit-progress-bar {
       background-color: transparent;
